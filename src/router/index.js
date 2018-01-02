@@ -12,6 +12,10 @@ import reportComponent from '@/components/left/report/report'
 import memberListComponent from '@/components/main/member/memberList'
 
 
+/*测试用*/
+import headerComponent from '@/components/head/header'
+import mainComponent from '@/components/mainComponet'
+
 Vue.use(Router)
 
 export default new Router({
@@ -20,6 +24,16 @@ export default new Router({
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld
+    },
+    {
+      path: '/main',
+      name: 'main',
+      component:mainComponent
+    },
+    {
+      path: '/head',
+      name: 'head',
+      component: headerComponent
     },
     {
       path: '/index',

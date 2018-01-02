@@ -141,9 +141,6 @@
       </div>
     </div>
 
-    <!-- 主要窗体 -->
-    <router-view name="memberList"></router-view>
-
   </div>
 </template>
 
@@ -269,5 +266,4 @@
 </script>
 
 <style>
-
 </style>

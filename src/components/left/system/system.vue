@@ -196,7 +196,8 @@
     </div>
 
     <!-- 系统 (Dynamic Panel) -->
-    <div id="u58" class="ax_default" :class="{ax_default_hidden:isAx_default_hidden,active:canshowList.memberFlag}" data-label="系统">
+    <div id="u58" class="ax_default" :class="{ax_default_hidden:isAx_default_hidden,active:canshowList.memberFlag}"
+         data-label="系统">
       <div id="u58_state0" class="panel_state" data-label="活动">
         <div id="u58_state0_content" class="panel_state_content">
 
@@ -450,16 +451,16 @@
     //组件私有数据（必须是function，而且要return对象类型）
     data() {
       return {
-        isAx_default_hidden : false,
-        canshowList:{
-          memberFlag : true,
-          showFlag : false,
-          productFlag : false,
-          drugsFlag : false,
-          doctorFlag : false,
-          agentFlag : false,
-          settingFlag : false,
-          activityFlag : false
+        isAx_default_hidden: false,
+        canshowList: {
+          memberFlag: true,
+          showFlag: false,
+          productFlag: false,
+          drugsFlag: false,
+          doctorFlag: false,
+          agentFlag: false,
+          settingFlag: false,
+          activityFlag: false
         }
       }
     },
@@ -467,12 +468,12 @@
     computed: {},
     //函数集，自己封装，便于开发使用
     methods: {
-      setHeadSelectFlag(){
-        this.$emit('child-system',true);
+      setHeadSelectFlag() {
+        this.$emit('child-system', true);
       },
       //显示会员菜单
-      showMember(){
-        jQuery("#u58_state7").css("visibility","inherit");
+      showMember() {
+        jQuery("#u58_state7").css("visibility", "inherit");
         jQuery("#u58_state7").show();
         this.isAx_default_hidden = false;
         this.$router.push("/index/system/member")
@@ -488,11 +489,16 @@
 </script>
 
 <style>
-  #u58_state0,#u58_state1,#u58_state2,#u58_state3,#u58_state4,#u58_state5,#u58_state6,#u58_state7,#u58_state8,#u58_state9{
+  #u58_state0, #u58_state1, #u58_state2, #u58_state3, #u58_state4, #u58_state5, #u58_state6, #u58_state7, #u58_state8, #u58_state9 {
     display: none;
   }
-  #u58.active,#u58_state7.active{
+
+  #u58.active, #u58_state7.active {
     visibility: inherit;
     display: block;
+  }
+
+  #u13_state0_content {
+    top: 56px;
   }
 </style>
