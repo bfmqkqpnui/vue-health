@@ -499,6 +499,6 @@
   }
 
   #u13_state0_content {
-    top: 56px;
+    /*top: 56px;*/
   }
 </style>

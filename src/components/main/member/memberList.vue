@@ -41,30 +41,66 @@
       <div id="u398" class="text"><p><span>搜索</span></p></div>
     </div>
 
-    <table style="position: absolute;top: 0rem;left: 0rem;">
-      <tr>
-        <td>批量选择</td>
-        <td>会员ID</td>
-        <td>会员姓名</td>
-        <td>年龄</td>
-        <td>性别</td>
-        <td>会员卡号</td>
-        <td>会员等级</td>
-        <td>家庭住址</td>
-        <td>操作</td>
+    <table style="position: absolute;top: 11.5rem;left: 17.5rem;border-color:#4FC0E8;border-collapse:collapse;border-spacing:0;width: 65.6875rem;" border="1" >
+      <tr style="color:#FFF;background:#45A2FF;height: 2rem;font-weight: bold;">
+        <td width="7%">批量选择</td>
+        <td width="5%">会员ID</td>
+        <td width="8%">会员姓名</td>
+        <td width="5%">年龄</td>
+        <td width="5%">性别</td>
+        <td width="10%">会员卡号</td>
+        <td width="5%">会员等级</td>
+        <td width="15%">家庭住址</td>
+        <td width="10%">操作</td>
       </tr>
 
       <tbody>
-        <tr>
-          <td>批量选择</td>
-          <td>会员ID</td>
-          <td>会员姓名</td>
-          <td>年龄</td>
-          <td>性别</td>
-          <td>会员卡号</td>
-          <td>会员等级</td>
-          <td>家庭住址</td>
-          <td>操作</td>
+        <tr style="height: 2rem;font-weight: bold;">
+          <td><input type="checkbox"></td>
+          <td>10001</td>
+          <td>张三</td>
+          <td>28</td>
+          <td>男</td>
+          <td>362121198211091586</td>
+          <td>1</td>
+          <td>上海静安区万航渡路XXX号XX幢XX室</td>
+          <td>
+            <a href="javascript:;" style="padding: 0 .5rem;"><img class="img " src="/static/images/u376.png" tabindex="0" style="outline: none;"></a>
+            <a href="javascirpt:;"><img class="img " src="/static/images/u378.png"></a>
+            <a href="javascript:;" style="padding: 0 .5rem;">查看</a>
+          </td>
+        </tr>
+
+        <tr style="height: 2rem;font-weight: bold;">
+          <td><input type="checkbox"></td>
+          <td>10001</td>
+          <td>张三</td>
+          <td>28</td>
+          <td>男</td>
+          <td>362121198211091586</td>
+          <td>1</td>
+          <td>上海静安区万航渡路XXX号XX幢XX室</td>
+          <td>
+            <a href="javascript:;" style="padding: 0 .5rem;"><img class="img " src="/static/images/u376.png" tabindex="0" style="outline: none;"></a>
+            <a href="javascirpt:;"><img class="img " src="/static/images/u378.png"></a>
+            <a href="javascript:;" style="padding: 0 .5rem;">查看</a>
+          </td>
+        </tr>
+
+        <tr style="height: 2rem;font-weight: bold;">
+          <td><input type="checkbox"></td>
+          <td>10001</td>
+          <td>张三</td>
+          <td>28</td>
+          <td>男</td>
+          <td>362121198211091586</td>
+          <td>1</td>
+          <td>上海静安区万航渡路XXX号XX幢XX室</td>
+          <td>
+            <a href="javascript:;" style="padding: 0 .5rem;"><img class="img " src="/static/images/u376.png" tabindex="0" style="outline: none;"></a>
+            <a href="javascirpt:;"><img class="img " src="/static/images/u378.png"></a>
+            <a href="javascript:;" style="padding: 0 .5rem;">查看</a>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -92,5 +128,15 @@
 </script>
 
 <style>
-
+  table{
+    table-layout: fixed;
+  }
+  table tr td {
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    -o-text-overflow:ellipsis;
+    -moz-text-overflow: ellipsis;
+    -webkit-text-overflow: ellipsis;
+  }
 </style>

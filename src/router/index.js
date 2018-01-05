@@ -54,20 +54,12 @@ export default new Router({
                   components: {memberList: memberListComponent},
                 }
               ]
-            },
-            {
-              path: 'memberList',
-              components: {memberList: memberListComponent},
             }
           ]
         },
         {path: 'shop', component: shopComponent},
         {path: 'clinic', component: systemComponent},
         {path: 'report', component: reportComponent},
-        {
-          path: 'memberList',
-          components: {memberList: memberListComponent},
-        }
       ]
     }
   ]
