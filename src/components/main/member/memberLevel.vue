@@ -1,7 +1,7 @@
 <!-- vue模板 -->
 <template>
-  <div>
-
+  <div style="position: relative;">
+    123
   </div>
 </template>
 

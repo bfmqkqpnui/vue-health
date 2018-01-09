@@ -43,7 +43,11 @@
     </div>
     <div class="showMain">
       <!-- 主要窗体 -->
-      <router-view name="memberList"></router-view>
+      <!--<router-view name="memberList"></router-view>-->
+
+      <memberListComponent v-show="selectFlag.u93Flag"></memberListComponent>
+      <rechargeRecordComponent v-show="selectFlag.u95Flag"></rechargeRecordComponent>
+      <memberLevelComponent v-show="selectFlag.u97Flag"></memberLevelComponent>
     </div>
   </div>
 
@@ -51,13 +55,16 @@
 
 <script>
   import jQuery from 'jquery'
+  import memberListComponent from '@/components/main/member/memberList'
+  import rechargeRecordComponent from '@/components/main/member/rechargeRecord'
+  import memberLevelComponent from '@/components/main/member/memberLevel'
   //Js部分尽量采用ES6语法，webpack babel插件会转义兼容
   export default {
     //组件私有数据（必须是function，而且要return对象类型）
     data() {
       return {
         selectFlag: {
-          u93Flag: false,
+          u93Flag: true,
           u95Flag: false,
           u97Flag: false
         }
@@ -91,19 +98,22 @@
           this.selectFlag.u93Flag = true;
           this.selectFlag.u95Flag = false;
           this.selectFlag.u97Flag = false;
-          this.$router.push("/index/system/member/memberList");
+          //this.$router.push("/index/system/member/memberList");
         } else if (id == "u95") {
           this.selectFlag.u93Flag = false;
           this.selectFlag.u95Flag = true;
           this.selectFlag.u97Flag = false;
+          //this.$router.push("/index/system/member/rechargeRecord");
         } else if (id == "u97") {
           this.selectFlag.u93Flag = false;
           this.selectFlag.u95Flag = false;
           this.selectFlag.u97Flag = true;
+          //this.$router.push("/index/system/member/memberLevel");
         } else {
-          this.selectFlag.u93Flag = false;
+          this.selectFlag.u93Flag = true;
           this.selectFlag.u95Flag = false;
           this.selectFlag.u97Flag = false;
+         //this.$router.push("/index/system/member/memberList");
         }
 
         let flag = jQuery("#" + id).hasClass("mouseOver");
@@ -118,7 +128,7 @@
 
     },
     //要用到哪些子组件（如果组件已是最小粒度，那么可省略该属性）
-    components: {}
+    components: {memberListComponent,rechargeRecordComponent,memberLevelComponent}
   }
 </script>
 
