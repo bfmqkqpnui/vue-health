@@ -47,7 +47,9 @@
 
       <memberListComponent v-show="selectFlag.u93Flag"></memberListComponent>
       <rechargeRecordComponent v-show="selectFlag.u95Flag"></rechargeRecordComponent>
-      <memberLevelComponent v-show="selectFlag.u97Flag"></memberLevelComponent>
+      <!--<memberLevelComponent v-show="selectFlag.u97Flag"></memberLevelComponent>-->
+
+      <transactionStatisticsComponent v-show="selectFlag.u97Flag"></transactionStatisticsComponent>
     </div>
   </div>
 
@@ -58,6 +60,9 @@
   import memberListComponent from '@/components/main/member/memberList'
   import rechargeRecordComponent from '@/components/main/member/rechargeRecord'
   import memberLevelComponent from '@/components/main/member/memberLevel'
+
+  import transactionStatisticsComponent from '@/components/main/report/transactionStatistics'
+
   //Js部分尽量采用ES6语法，webpack babel插件会转义兼容
   export default {
     //组件私有数据（必须是function，而且要return对象类型）
@@ -128,7 +133,7 @@
 
     },
     //要用到哪些子组件（如果组件已是最小粒度，那么可省略该属性）
-    components: {memberListComponent,rechargeRecordComponent,memberLevelComponent}
+    components: {memberListComponent,rechargeRecordComponent,memberLevelComponent,transactionStatisticsComponent}
   }
 </script>
 

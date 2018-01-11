@@ -152,6 +152,10 @@ Vue.prototype.$message = Message
 Vue.config.productionTip = false
 Vue.use(ElementUI, { size: 'small' })
 
+import echarts from 'echarts'
+
+Vue.prototype.$echarts = echarts
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
